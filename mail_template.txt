@@ -1,0 +1,6 @@
+These item(s) has higher auction house price or are not auction:
+{% for item in items %}
+    {{ item.id }}
+    {{ item.name }}
+    {{ item.price }}
+{% endfor %}

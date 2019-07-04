@@ -1,16 +1,13 @@
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
-import json
 
 
 class Email:
-    def __init__(self, server):
+    def __init__(self, server, password, _from):
         self.msg = MIMEMultipart()
-        with open('credentials.json') as credentials_file:
-            self.data = json.load(credentials_file)
-        self.password = self.data['password']
-        self.msg['From'] = self.data['from']
+        self.password = password
+        self.msg['From'] = _from
         self.server = smtplib.SMTP(server)
 
     def send_email(self, recipient, subject, message):

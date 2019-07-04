@@ -1,0 +1,25 @@
+{
+  "api_credentials": {
+    "client_id": "",
+    "client_secret": "",
+    "realm": "",
+    "localization": ""
+  },
+  "email_credentials": {
+      "from": "",
+      "password": "",
+      "server": ""
+  },
+  "items": [
+    {
+      "name": "Embroidered Deep Sea Bag",
+      "id": 154696,
+      "price": [9000,0,0]
+    },
+    {
+      "name": "Hexweave Bag",
+      "id": 114821,
+      "price": [1000,0,0]
+    }
+  ]
+}
