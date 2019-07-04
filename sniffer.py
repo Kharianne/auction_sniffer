@@ -34,7 +34,7 @@ if __name__ == '__main__':
         Email(config["email_credentials"]["server"],
               config["email_credentials"]["password"],
               config["email_credentials"]["from"])\
-            .send_email("katerinamrkackova@gmail.com",
+            .send_email(config["email_credentials"]["to"],
                         'Results of auction sniffing', message)
 
 
